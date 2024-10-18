@@ -1,0 +1,18 @@
+2024-05-21 13:39:59,713 : INFO : get_logger: 
+ **************  START NEW RUN  **************
+2024-05-21 13:39:59,714 : INFO : get_logger: Website loaded
+2024-05-21 13:52:38,397 : INFO : get_logger: 
+ **************  START NEW RUN  **************
+2024-05-21 13:52:38,397 : INFO : get_logger: Website loaded
+2024-05-21 13:52:40,363 : INFO : get_logger: Clicked on Cart
+2024-05-21 13:52:40,385 : INFO : get_logger: Empty Cart
+2024-05-21 13:59:11,298 : INFO : test_empty_cart: 
+ **************  START NEW RUN  **************
+2024-05-21 13:59:11,299 : INFO : test_empty_cart: Website loaded
+2024-05-21 13:59:11,391 : INFO : test_empty_cart: Clicked on Cart
+2024-05-21 13:59:11,415 : INFO : test_empty_cart: Empty Cart
+2024-05-27 13:56:09,264 : INFO : test_empty_cart: 
+ **************  START NEW RUN  **************
+2024-05-27 13:56:09,291 : INFO : test_empty_cart: Website loaded
+2024-05-27 13:56:10,861 : INFO : test_empty_cart: Clicked on Cart
+2024-05-27 13:56:10,966 : INFO : test_empty_cart: Empty Cart
