@@ -1,0 +1,5 @@
+DEBUG    test_e2e:test_e2e.py:21 
+ **************  START NEW RUN  **************
+DEBUG    test_e2e:test_e2e.py:35 Testing the DEBUG level logging without initializing
+DEBUG    test_e2e:test_e2e.py:36 200
+DEBUG    test_e2e:test_e2e.py:37 {'token': 'a4b0c3b5f045018'}
