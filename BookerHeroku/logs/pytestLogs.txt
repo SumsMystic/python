@@ -1,7 +1,22 @@
-2024-10-18 13:03:43 DEBUG 
- **************  START NEW RUN  **************
-2024-10-18 13:03:43 DEBUG Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
-2024-10-18 13:03:44 DEBUG https://restful-booker.herokuapp.com:443 "POST /auth HTTP/1.1" 200 27
-2024-10-18 13:03:44 DEBUG Testing the DEBUG level logging without initializing
-2024-10-18 13:03:44 DEBUG 200
-2024-10-18 13:03:44 DEBUG {'token': 'f4ba87dfea4324e'}
+2024-10-23 14:31:02 INFO 
+
+2024-10-23 14:31:02 INFO **************  START NEW RUN  **************
+2024-10-23 14:31:02 INFO  ---- Executing  test_get_auth_token ---- 
+2024-10-23 14:31:03 INFO Token is: 0fc40412f39a94a
+2024-10-23 14:31:03 INFO  ---- Executing  test_get_all_bookings ---- 
+2024-10-23 14:31:05 INFO  ---- Executing  test_add_book_to_library ---- 
+2024-10-23 14:31:06 INFO New Test Book added with Booking ID: 5355
+2024-10-23 14:31:06 INFO  ---- Executing  test_delete_newly_added_book ---- 
+2024-10-23 14:31:06 INFO cooks: {'token': ''}
+2024-10-23 14:31:06 INFO final URL: https://restful-booker.herokuapp.com/booking/
+2024-10-23 14:37:00 INFO 
+
+2024-10-23 14:37:00 INFO **************  START NEW RUN  **************
+2024-10-23 14:37:00 INFO  ---- Executing  test_get_auth_token ---- 
+2024-10-23 14:37:01 INFO Token is: d2ea3f5699c2c88
+2024-10-23 14:37:01 INFO  ---- Executing  test_get_all_bookings ---- 
+2024-10-23 14:37:02 INFO  ---- Executing  test_add_book_to_library ---- 
+2024-10-23 14:37:03 INFO New Test Book added with Booking ID: 2869
+2024-10-23 14:37:03 INFO  ---- Executing  test_delete_newly_added_book ---- 
+2024-10-23 14:37:03 INFO cooks: {'token': ''}
+2024-10-23 14:37:03 INFO final URL: https://restful-booker.herokuapp.com/booking/

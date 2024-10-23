@@ -1,0 +1,7 @@
+2024-10-21 13:40:30 DEBUG 
+ **************  START NEW RUN  **************
+2024-10-21 13:40:30 DEBUG Starting new HTTPS connection (1): restful-booker.herokuapp.com:443
+2024-10-21 13:40:31 DEBUG https://restful-booker.herokuapp.com:443 "POST /auth HTTP/1.1" 200 27
+2024-10-21 13:40:31 DEBUG Testing the DEBUG level logging without initializing
+2024-10-21 13:40:31 DEBUG 200
+2024-10-21 13:40:31 DEBUG {'token': '74d9ed53abcbe9e'}
