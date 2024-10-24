@@ -20,3 +20,79 @@
 2024-10-23 14:37:03 INFO  ---- Executing  test_delete_newly_added_book ---- 
 2024-10-23 14:37:03 INFO cooks: {'token': ''}
 2024-10-23 14:37:03 INFO final URL: https://restful-booker.herokuapp.com/booking/
+2024-10-24 12:34:00 INFO 
+
+2024-10-24 12:34:00 INFO **************  START NEW RUN  **************
+2024-10-24 12:34:00 INFO  ---- Executing  test_get_auth_token ---- 
+2024-10-24 12:34:01 INFO Token is: 
+2024-10-24 12:34:01 INFO  ---- Executing  test_get_all_bookings ---- 
+2024-10-24 12:34:02 INFO  ---- Executing  test_add_book_to_library ---- 
+2024-10-24 12:34:03 INFO New Test Book added with Booking ID: 6414
+2024-10-24 12:34:03 INFO  ---- Executing  test_delete_newly_added_book ---- 
+2024-10-24 12:34:03 INFO cooks: {'token': 'b19d929c81451ed'}
+2024-10-24 12:34:03 INFO final URL: https://restful-booker.herokuapp.com/booking/
+2024-10-24 12:47:03 INFO 
+
+2024-10-24 12:47:03 INFO **************  START NEW RUN  **************
+2024-10-24 12:47:03 INFO  ---- Executing  test_get_auth_token ---- 
+2024-10-24 12:47:04 INFO  ---- Executing  test_get_all_bookings ---- 
+2024-10-24 12:47:06 INFO  ---- Executing  test_add_book_to_library ---- 
+2024-10-24 12:47:07 INFO  ---- Executing  test_delete_newly_added_book ---- 
+2024-10-24 12:48:59 INFO 
+
+2024-10-24 12:48:59 INFO **************  START NEW RUN  **************
+2024-10-24 12:48:59 INFO  ---- Executing  test_get_auth_token ---- 
+2024-10-24 12:49:55 INFO 
+
+2024-10-24 12:49:55 INFO **************  START NEW RUN  **************
+2024-10-24 12:49:55 INFO  ---- Executing  test_get_auth_token ---- 
+2024-10-24 12:51:20 INFO  ---- Executing  test_get_all_bookings ---- 
+2024-10-24 12:51:21 INFO  ---- Executing  test_add_book_to_library ---- 
+2024-10-24 12:51:22 INFO  ---- Executing  test_delete_newly_added_book ---- 
+2024-10-24 12:51:22 INFO cooks: {'token': '5874a6fe1c21f96'}
+2024-10-24 12:51:22 INFO final URL: https://restful-booker.herokuapp.com/booking/3387
+2024-10-24 12:54:29 INFO 
+
+2024-10-24 12:54:29 INFO **************  START NEW RUN  **************
+2024-10-24 12:54:29 INFO  ---- Executing  test_get_auth_token ---- 
+2024-10-24 12:54:30 INFO  ---- Executing  test_get_all_bookings ---- 
+2024-10-24 12:54:31 INFO  ---- Executing  test_add_book_to_library ---- 
+2024-10-24 12:54:32 INFO  ---- Executing  test_delete_newly_added_book ---- 
+2024-10-24 12:54:32 INFO cooks: {'token': 'a057a70bedcbcc9'}
+2024-10-24 12:54:32 INFO final URL: https://restful-booker.herokuapp.com/booking/15104
+2024-10-24 13:00:06 INFO 
+
+2024-10-24 13:00:06 INFO **************  START NEW RUN  **************
+2024-10-24 13:00:06 INFO  ---- Executing  test_get_auth_token ---- 
+2024-10-24 13:00:07 INFO  ---- Executing  test_get_all_bookings ---- 
+2024-10-24 13:00:08 INFO  ---- Executing  test_add_book_to_library ---- 
+2024-10-24 13:00:09 INFO  ---- Executing  test_delete_newly_added_book ---- 
+2024-10-24 13:00:09 INFO cooks: {'token': '5b81f2ed48d3ccf'}
+2024-10-24 13:00:09 INFO final URL: https://restful-booker.herokuapp.com/booking/18021
+2024-10-24 13:02:05 INFO 
+
+2024-10-24 13:02:05 INFO **************  START NEW RUN  **************
+2024-10-24 13:02:05 INFO  ---- Executing  test_get_auth_token ---- 
+2024-10-24 13:02:07 INFO  ---- Executing  test_get_all_bookings ---- 
+2024-10-24 13:02:08 INFO  ---- Executing  test_add_book_to_library ---- 
+2024-10-24 13:02:08 INFO  ---- Executing  test_delete_newly_added_book ---- 
+2024-10-24 13:02:08 INFO cooks: {'token': 'd7ea816961bcc5f'}
+2024-10-24 13:02:08 INFO final URL: https://restful-booker.herokuapp.com/booking/6149
+2024-10-24 13:05:15 INFO 
+
+2024-10-24 13:05:15 INFO **************  START NEW RUN  **************
+2024-10-24 13:05:15 INFO  ---- Executing  test_get_auth_token ---- 
+2024-10-24 13:05:16 INFO  ---- Executing  test_get_all_bookings ---- 
+2024-10-24 13:05:18 INFO  ---- Executing  test_add_book_to_library ---- 
+2024-10-24 13:05:20 INFO  ---- Executing  test_delete_newly_added_book ---- 
+2024-10-24 13:05:20 INFO cooks: {'token': 'cce0bd0b24d1d7c'}
+2024-10-24 13:05:20 INFO final URL: https://restful-booker.herokuapp.com/booking/16707
+2024-10-24 13:06:24 INFO 
+
+2024-10-24 13:06:24 INFO **************  START NEW RUN  **************
+2024-10-24 13:06:24 INFO  ---- Executing  test_get_auth_token ---- 
+2024-10-24 13:06:25 INFO  ---- Executing  test_get_all_bookings ---- 
+2024-10-24 13:06:26 INFO  ---- Executing  test_add_book_to_library ---- 
+2024-10-24 13:06:27 INFO  ---- Executing  test_delete_newly_added_book ---- 
+2024-10-24 13:06:27 INFO cooks: {'token': 'c1e67efd2e44079'}
+2024-10-24 13:06:27 INFO final URL: https://restful-booker.herokuapp.com/booking/21882

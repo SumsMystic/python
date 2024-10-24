@@ -32,14 +32,15 @@ class Test_BookerHerokuActionsBaseClass:
     
         
     @pytest.mark.slow
-    def test_get_auth_token(self):
+    def test_get_auth_token(self, request):
         self.proj_logger.info(" ---- Executing  test_get_auth_token ---- ")
         data = {"username": "admin", "password": "password123"}
         resp = requests.post(self.bs_url + "/auth", verify=False, headers=self.json_header, json=data)
         assert resp.status_code == 200
         auth_token_json = resp.json()
-        self.auth_token = str(auth_token_json['token'])
-        self.proj_logger.info("Token is: {}".format(self.auth_token))
+        # self.auth_token = str(auth_token_json['token'])
+        request.config.cache.set('auth_token', str(auth_token_json['token']))
+        # self.proj_logger.info("Token is: {}".format(self.auth_token))
 
     
     @pytest.mark.slow
@@ -63,7 +64,7 @@ class Test_BookerHerokuActionsBaseClass:
         
 
     @pytest.mark.slow
-    def test_add_book_to_library(self):
+    def test_add_book_to_library(self, request):
         self.proj_logger.info(" ---- Executing  test_add_book_to_library ---- ")
         test_book_json = {
                         "firstname" : "SUMS",
@@ -79,14 +80,17 @@ class Test_BookerHerokuActionsBaseClass:
         resp = requests.post(self.bs_url + "/booking", verify=False, headers=self.json_header, json=test_book_json)
         assert resp.status_code == 200
         rsp_json = resp.json()
-        self.test_book_booking_id = str(rsp_json['bookingid'])
-        self.proj_logger.info("New Test Book added with Booking ID: {}".format(self.test_book_booking_id))   
+        # self.test_book_booking_id = str(rsp_json['bookingid'])
+        request.config.cache.set("test_book_booking_id", str(rsp_json['bookingid']))
+        # self.proj_logger.info("New Test Book added with Booking ID: {}".format(self.test_book_booking_id))   
         
     @pytest.mark.slow
-    def test_delete_newly_added_book(self):
+    def test_delete_newly_added_book(self, request):
         self.proj_logger.info(" ---- Executing  test_delete_newly_added_book ---- ")
-        cooks = {'token': self.auth_token}
+        auth_tkn = request.config.cache.get('auth_token', "")
+        test_book_bkg_id = request.config.cache.get('test_book_booking_id', "")
+        cooks = {'token': auth_tkn}
         self.proj_logger.info("cooks: {}".format(cooks))
-        self.proj_logger.info("final URL: {}".format(self.bs_url + "/booking/" + self.test_book_booking_id))
-        resp = requests.delete(self.bs_url + "/booking/" + self.test_book_booking_id, verify=False, headers=self.json_header, cookies=cooks)
-        assert resp.status_code == 200  
+        self.proj_logger.info("final URL: {}".format(self.bs_url + "/booking/" + test_book_bkg_id))
+        resp = requests.delete(self.bs_url + "/booking/" + test_book_bkg_id, verify=False, headers=self.json_header, cookies=cooks)
+        assert resp.status_code == 201  

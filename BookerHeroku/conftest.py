@@ -20,5 +20,3 @@ def suite_setup(request):
     request.cls.proj_logger.info("**************  START NEW RUN  **************")
     request.cls.bs_url = get_config_option('general', 'base_url')    
     request.cls.json_header = {"Content-Type": "application/json"}
-    request.cls.auth_token = ""
-    request.cls.test_book_booking_id = ""
