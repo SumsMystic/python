@@ -1,0 +1,78 @@
+2025-01-28 13:40:43 INFO 
+
+2025-01-28 13:40:43 INFO **************  START NEW RUN  **************
+2025-01-28 13:40:45 INFO 
+
+2025-01-28 13:40:45 INFO Successfully found the Username textbox
+2025-01-28 13:40:45 INFO Successfully found the Password textbox
+2025-01-28 13:40:45 INFO Found the Login Button
+2025-01-28 13:40:51 INFO Passwords Leaked Browser Alert Not Found. Continue...
+2025-01-28 13:40:51 INFO Specified Test Item Sauce Labs Backpack Found in the Shopping Inventory
+2025-01-28 13:40:56 INFO Price of 'Sauce Labs Backpack' is $29.99 and has been added to the cart
+2025-01-28 13:40:56 INFO Logout Options Button IS present at Correct location of Top Left Corner
+2025-01-28 13:40:56 INFO Found the Logout Options Burger-type Button
+2025-01-28 13:40:56 INFO Logged Out
+2025-01-28 13:40:56 INFO 
+
+2025-01-28 13:40:56 INFO Successfully found the Username textbox
+2025-01-28 13:40:56 INFO Successfully found the Password textbox
+2025-01-28 13:40:56 INFO Found the Login Button
+2025-01-28 13:41:01 INFO Passwords Leaked Browser Alert Not Found. Continue...
+2025-01-28 13:41:01 INFO Not able to add the Specified Test Item Sauce Labs Fleece Jacket to the Cart
+2025-01-28 13:41:01 INFO Not able to add the Specified Test Item Sauce Labs Fleece Jacket to the Cart
+2025-01-28 13:41:01 INFO Not able to add the Specified Test Item Sauce Labs Fleece Jacket to the Cart
+2025-01-28 13:41:01 INFO Specified Test Item Sauce Labs Fleece Jacket Found in the Shopping Inventory
+2025-01-28 13:41:07 INFO Price of 'Sauce Labs Fleece Jacket' is $49.99 and has been added to the cart
+2025-01-28 13:41:07 INFO Logout Options Button IS present at Correct location of Top Left Corner
+2025-01-28 13:41:07 INFO Found the Logout Options Burger-type Button
+2025-01-28 13:41:07 INFO Logged Out
+2025-01-28 13:44:58 INFO 
+
+2025-01-28 13:44:58 INFO **************  START NEW RUN  **************
+2025-01-28 13:45:00 INFO Successfully found the Username textbox
+2025-01-28 13:45:00 INFO Successfully found the Password textbox
+2025-01-28 13:45:00 INFO Found the Login Button
+2025-01-28 13:45:06 INFO Passwords Leaked Browser Alert Not Found. Continue...
+2025-01-28 13:45:06 INFO Specified Test Item Sauce Labs Backpack Found in the Shopping Inventory
+2025-01-28 13:45:11 INFO Price of 'Sauce Labs Backpack' is $29.99 and has been added to the cart
+2025-01-28 13:45:11 INFO Logout Options Button IS present at Correct location of Top Left Corner
+2025-01-28 13:45:11 INFO Found the Logout Options Burger-type Button
+2025-01-28 13:45:11 INFO Logged Out
+2025-01-28 13:45:11 INFO Successfully found the Username textbox
+2025-01-28 13:45:11 INFO Successfully found the Password textbox
+2025-01-28 13:45:11 INFO Found the Login Button
+2025-01-28 13:45:16 INFO Passwords Leaked Browser Alert Not Found. Continue...
+2025-01-28 13:45:17 INFO Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-01-28 13:45:17 INFO Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-01-28 13:45:17 INFO Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-01-28 13:45:17 INFO Specified Test Item Sauce Labs Fleece Jacket Found in the Shopping Inventory
+2025-01-28 13:45:22 INFO Price of 'Sauce Labs Fleece Jacket' is $49.99 and has been added to the cart
+2025-01-28 13:45:22 INFO Logout Options Button IS present at Correct location of Top Left Corner
+2025-01-28 13:45:22 INFO Found the Logout Options Burger-type Button
+2025-01-28 13:45:22 INFO Logged Out
+2025-01-28 13:48:09 INFO 
+
+2025-01-28 13:48:09 INFO **************  START NEW RUN  **************
+2025-01-28 13:48:12 INFO 
+ Successfully found the Username textbox
+2025-01-28 13:48:12 INFO Successfully found the Password textbox
+2025-01-28 13:48:12 INFO Found the Login Button
+2025-01-28 13:48:18 INFO Passwords Leaked Browser Alert Not Found. Continue...
+2025-01-28 13:48:18 INFO Specified Test Item Sauce Labs Backpack Found in the Shopping Inventory
+2025-01-28 13:48:23 INFO Price of 'Sauce Labs Backpack' is $29.99 and has been added to the cart
+2025-01-28 13:48:23 INFO Logout Options Button IS present at Correct location of Top Left Corner
+2025-01-28 13:48:23 INFO Found the Logout Options Burger-type Button
+2025-01-28 13:48:23 INFO Logged Out
+2025-01-28 13:48:23 INFO 
+ Successfully found the Username textbox
+2025-01-28 13:48:23 INFO Successfully found the Password textbox
+2025-01-28 13:48:23 INFO Found the Login Button
+2025-01-28 13:48:28 INFO Passwords Leaked Browser Alert Not Found. Continue...
+2025-01-28 13:48:29 INFO Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-01-28 13:48:29 INFO Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-01-28 13:48:29 INFO Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-01-28 13:48:29 INFO Specified Test Item Sauce Labs Fleece Jacket Found in the Shopping Inventory
+2025-01-28 13:48:34 INFO Price of 'Sauce Labs Fleece Jacket' is $49.99 and has been added to the cart
+2025-01-28 13:48:34 INFO Logout Options Button IS present at Correct location of Top Left Corner
+2025-01-28 13:48:34 INFO Found the Logout Options Burger-type Button
+2025-01-28 13:48:34 INFO Logged Out

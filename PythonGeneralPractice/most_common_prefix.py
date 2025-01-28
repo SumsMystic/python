@@ -6,7 +6,7 @@ Created on Sep 23, 2024
 # Write a program to find MOST common prefix from an array of strings
 # E.g., ["tree", "trunk", "trust"]
 #    Here, 'tr' appears in all 3 strings but 'tru' has 3 chars and appears in 2 strs and...
-#    ... no 'tr' prefix appears in MOST number of strings so 'tr' is the answer to this question
+#    ... so 'tr' prefix appears in MOST number of strings so 'tr' is the answer to this question
 
 test_lst = ["tree", "trunk", "trust"]
 # test_lst = ["tree", "trunk", "trust", "truth", "triumph", "trump", "trumpet", "abc12312", "abc1223423", "abc1223423", "abc1288434"]

@@ -49,7 +49,7 @@ CONCLUSIONS
 ... differently for each object (E.g., college name remains constant for all students but while creating student, we ...
 ... can initialize object for different college depts. at run time.
 3. @property helps to access object values from methods as if accessing props / attributes...
-...Helps to hide implementation - another imp concept of OOPS
+...Helps to hide implementation (called as Encapsulation) - another imp concept of OOPS
 
 '''
 
