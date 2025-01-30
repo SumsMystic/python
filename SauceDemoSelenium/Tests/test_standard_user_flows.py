@@ -25,14 +25,16 @@ class Test_StdUser_Shopping_Flows(LoginPage, ProductsDisplayPage):
     
     
     @pytest.mark.smoke
-    # @pytest.mark.usefixtures('login_tests_suite_setup')
-    def test_add_backpack_to_cart(self, login_tests_suite_setup):
+    @pytest.mark.usefixtures('login_tests_suite_setup')
+    def test_add_backpack_to_cart(self):
         item_price = self.Add_Item_To_Cart_And_Get_Its_Price('Sauce Labs Backpack')
         self.proj_logger.info(f"Price of 'Sauce Labs Backpack' is {item_price} and has been added to the cart")
+        assert self.Is_Shopped_Inventory_Item_Now_Has_Remove_Button('Sauce Labs Backpack')
         
     
     @pytest.mark.smoke
-    # @pytest.mark.usefixtures('login_tests_suite_setup')
-    def test_add_fleece_jacket_to_cart(self, login_tests_suite_setup):
+    @pytest.mark.usefixtures('login_tests_suite_setup')
+    def test_add_fleece_jacket_to_cart(self):
         item_price = self.Add_Item_To_Cart_And_Get_Its_Price('Sauce Labs Fleece Jacket')
         self.proj_logger.info(f"Price of 'Sauce Labs Fleece Jacket' is {item_price} and has been added to the cart")
+        assert self.Is_Shopped_Inventory_Item_Now_Has_Remove_Button('Sauce Labs Fleece Jacket')

@@ -19,7 +19,6 @@ class Employee:
     def get_name(self):
         return self.name
     
-    
     def increase_sal(self, inc_num):
         self.salary = self.salary + inc_num
         print(f"new salary is: {self.salary}")
