@@ -8,6 +8,7 @@ Created on Jan 20, 2025
 import pytest
 import logging
 from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 @pytest.fixture(scope="class")
@@ -22,6 +23,7 @@ def login_tests_suite_setup(request):
     request.cls.driver.get('https://www.saucedemo.com')
     request.cls.driver.maximize_window()
     request.cls.driver.implicitly_wait(5)
+    request.cls.driver.expl_wait_obj = WebDriverWait(request.cls.driver, 10)
     yield
     request.cls.driver.close()
 
