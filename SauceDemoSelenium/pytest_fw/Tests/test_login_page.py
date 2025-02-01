@@ -6,7 +6,7 @@ Created on Jan 20, 2025
 
 
 import pytest
-from Pages.login_page import LoginPage
+from pytest_fw.Pages.login_page import LoginPage
 # from selenium import webdriver
 
 @pytest.mark.usefixtures('login_tests_suite_setup')

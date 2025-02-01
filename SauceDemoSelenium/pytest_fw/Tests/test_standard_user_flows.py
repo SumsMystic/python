@@ -6,10 +6,10 @@ Created on Jan 21, 2025
 
 
 import pytest
-from Pages.login_page import LoginPage
-from Pages.product_display_page import ProductsDisplayPage
-from Pages.shopping_cart_page import ShoppingCartPage
-from Pages.cart_checkout_page import CartCheckOutPage
+from pytest_fw.Pages.login_page import LoginPage
+from pytest_fw.Pages.product_display_page import ProductsDisplayPage
+from pytest_fw.Pages.shopping_cart_page import ShoppingCartPage
+from pytest_fw.Pages.cart_checkout_page import CartCheckOutPage
 from time import sleep
 
 
