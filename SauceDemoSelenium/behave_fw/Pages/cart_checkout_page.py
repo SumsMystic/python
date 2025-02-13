@@ -48,3 +48,26 @@ class CartCheckOutPage:
             self.driver.find_element(By.XPATH, '//button[@id="cancel"]').click()
         except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
             self.proj_logger.error(f"Exception {E} occurred while trying to click on Cancel from Checkout Page")
+
+    def click_continue_button(self):
+        try:
+            self.driver.find_element(By.XPATH, '//input[@id="continue"]').click()
+        except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
+            self.proj_logger.error(f"Exception {E} occurred while trying to click on Continue from Checkout Page")
+            
+    def get_item_total_price_from_final_billing_page(self):
+        try:
+            self.expl_wait_obj.until(EC.presence_of_element_located((By.CLASS_NAME, 'summary_info_label'))) 
+            cart_subtotal_txt = self.expl_wait_obj.until(EC.presence_of_element_located((By.CLASS_NAME, 'summary_subtotal_label'))).text
+            cart_subtotal_int = float(cart_subtotal_txt.split('$')[1])
+            return cart_subtotal_int
+        except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
+            self.proj_logger.info(f"Exception {E} occurred while trying to find if the Shopping Cart is empty")
+            # We'll return 'False' so that this exception would cause the test case to fail. This is just for trial for now.
+            return float(0)
+        
+    def click_finish_button(self):
+        try:
+            self.driver.find_element(By.XPATH, '//button[@id="finish"]').click()
+        except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
+            self.proj_logger.error(f"Exception {E} occurred while trying to click on Finish from Checkout Overview Page")

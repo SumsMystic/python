@@ -54,3 +54,8 @@ class LoginPage:
         except NoSuchElementException as E:
             self.proj_logger.info(f"Burger menu not found. Exception: {E}")
             return False
+        
+    def logout(self):
+        logout_link = self.driver.find_element(By.PARTIAL_LINK_TEXT, 'Logout')
+        logout_link.click()
+        self.proj_logger.info("Logged Out")

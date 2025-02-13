@@ -29,6 +29,7 @@ def before_all(context):
     context.shopping_cart_page = ShoppingCartPage(context)
     context.cart_checkout_page = CartCheckOutPage(context)
     context.login_page = LoginPage(context)
+    context.cart_total_price = 0
 
 def after_all(context):
     """
@@ -41,17 +42,6 @@ def after_scenario(context, scenario):
     """
     Teardown that runs after each scenario
     """
-    context.Is_Website_Burger_Menu_On_Top_Left_Corner()
-    context.Get_Website_Burger_Menu_From_Top_Left_Corner()
-    context.Logout()
-
-
-def login_as_standard_user_before_each_test_scenario(context):
-    """
-    Setup that runs before each scenario
-    """
-    context.login_page.get_user_name_textbox().send_keys('standard_user')
-    context.login_page.get_password_textbox().send_keys('secret_sauce')
-    context.login_page.get_login_button().click()
-    context.login_page.Handle_Browser_Alert_For_Leaked_Passwords()
-
+    context.login_page.is_website_burger_menu_on_top_left_corner()
+    context.login_page.get_website_burger_menu_from_top_left_corner()
+    context.login_page.logout()
