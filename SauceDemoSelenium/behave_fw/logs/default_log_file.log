@@ -1,0 +1,118 @@
+2025-02-18 14:19:27,138 : INFO : SauceDemoSelenium: 
+ **************  START NEW RUN  **************
+2025-02-18 14:19:33,363 : INFO : SauceDemoSelenium: 
+
+2025-02-18 14:19:33,363 : INFO : SauceDemoSelenium: Successfully found the Username textbox
+2025-02-18 14:19:33,529 : INFO : SauceDemoSelenium: Successfully found the Password textbox
+2025-02-18 14:19:33,594 : INFO : SauceDemoSelenium: Found the Login Button
+2025-02-18 14:19:43,786 : INFO : SauceDemoSelenium: Passwords Leaked Browser Alert Not Found. Continue...
+2025-02-18 14:19:43,867 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Backpack Found in the Shopping Inventory
+2025-02-18 14:19:48,952 : INFO : SauceDemoSelenium: Price of 'Sauce Labs Backpack' is 29.99 and has been added to the cart
+2025-02-18 14:19:49,022 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Backpack Found in the Shopping Inventory
+2025-02-18 14:19:54,103 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:19:54,128 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:19:54,155 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:19:54,181 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Fleece Jacket Found in the Shopping Inventory
+2025-02-18 14:19:59,251 : INFO : SauceDemoSelenium: Price of 'Sauce Labs Fleece Jacket' is 49.99 and has been added to the cart
+2025-02-18 14:19:59,338 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:19:59,368 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:19:59,393 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:19:59,419 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Fleece Jacket Found in the Shopping Inventory
+2025-02-18 14:20:09,691 : INFO : SauceDemoSelenium: Removed Sauce Labs Fleece Jacket from the cart
+2025-02-18 14:20:14,819 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Onesie in the item cards yet. Continuing...
+2025-02-18 14:20:14,843 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Onesie in the item cards yet. Continuing...
+2025-02-18 14:20:14,865 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Onesie in the item cards yet. Continuing...
+2025-02-18 14:20:14,886 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Onesie in the item cards yet. Continuing...
+2025-02-18 14:20:14,909 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Onesie Found in the Shopping Inventory
+2025-02-18 14:20:19,976 : INFO : SauceDemoSelenium: Price of 'Sauce Labs Onesie' is 7.99 and has been added to the cart
+2025-02-18 14:20:20,041 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Onesie in the item cards yet. Continuing...
+2025-02-18 14:20:20,068 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Onesie in the item cards yet. Continuing...
+2025-02-18 14:20:20,095 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Onesie in the item cards yet. Continuing...
+2025-02-18 14:20:20,120 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Onesie in the item cards yet. Continuing...
+2025-02-18 14:20:20,144 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Onesie Found in the Shopping Inventory
+2025-02-18 14:20:25,290 : INFO : SauceDemoSelenium: Is this item present in the cart?:  Sauce Labs Backpack
+2025-02-18 14:20:25,313 : INFO : SauceDemoSelenium: Current Comparison Item in the cart?:  Sauce Labs Backpack
+2025-02-18 14:20:25,313 : INFO : SauceDemoSelenium: Is this item present in the cart?:  Sauce Labs Onesie
+2025-02-18 14:20:25,337 : INFO : SauceDemoSelenium: Current Comparison Item in the cart?:  Sauce Labs Backpack
+2025-02-18 14:20:25,353 : INFO : SauceDemoSelenium: Current Comparison Item in the cart?:  Sauce Labs Onesie
+2025-02-18 14:20:31,006 : INFO : SauceDemoSelenium: Found the Logout Options Burger-type Button
+2025-02-18 14:20:31,152 : INFO : SauceDemoSelenium: Resetting the app state before logging off...
+2025-02-18 14:20:31,228 : INFO : SauceDemoSelenium: Logged Out
+2025-02-18 14:20:31,228 : INFO : SauceDemoSelenium: Logging out from the application
+2025-02-18 14:20:31,335 : INFO : SauceDemoSelenium: 
+
+2025-02-18 14:20:31,335 : INFO : SauceDemoSelenium: Successfully found the Username textbox
+2025-02-18 14:20:31,460 : INFO : SauceDemoSelenium: Successfully found the Password textbox
+2025-02-18 14:20:31,503 : INFO : SauceDemoSelenium: Found the Login Button
+2025-02-18 14:20:41,645 : INFO : SauceDemoSelenium: Passwords Leaked Browser Alert Not Found. Continue...
+2025-02-18 14:20:41,692 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Backpack Found in the Shopping Inventory
+2025-02-18 14:20:46,760 : INFO : SauceDemoSelenium: Price of 'Sauce Labs Backpack' is 29.99 and has been added to the cart
+2025-02-18 14:20:46,825 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Backpack Found in the Shopping Inventory
+2025-02-18 14:20:51,918 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:20:51,944 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:20:51,971 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:20:51,998 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Fleece Jacket Found in the Shopping Inventory
+2025-02-18 14:20:57,062 : INFO : SauceDemoSelenium: Price of 'Sauce Labs Fleece Jacket' is 49.99 and has been added to the cart
+2025-02-18 14:20:57,134 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:20:57,160 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:20:57,187 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Sauce Labs Fleece Jacket in the item cards yet. Continuing...
+2025-02-18 14:20:57,213 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Fleece Jacket Found in the Shopping Inventory
+2025-02-18 14:21:02,338 : INFO : SauceDemoSelenium: Is this item present in the cart?:  Sauce Labs Backpack
+2025-02-18 14:21:02,363 : INFO : SauceDemoSelenium: Current Comparison Item in the cart?:  Sauce Labs Backpack
+2025-02-18 14:21:02,363 : INFO : SauceDemoSelenium: Is this item present in the cart?:  Sauce Labs Fleece Jacket
+2025-02-18 14:21:02,385 : INFO : SauceDemoSelenium: Current Comparison Item in the cart?:  Sauce Labs Backpack
+2025-02-18 14:21:02,403 : INFO : SauceDemoSelenium: Current Comparison Item in the cart?:  Sauce Labs Fleece Jacket
+2025-02-18 14:21:07,980 : INFO : SauceDemoSelenium: Found the Logout Options Burger-type Button
+2025-02-18 14:21:08,132 : INFO : SauceDemoSelenium: Resetting the app state before logging off...
+2025-02-18 14:21:08,197 : INFO : SauceDemoSelenium: Logged Out
+2025-02-18 14:21:08,197 : INFO : SauceDemoSelenium: Logging out from the application
+2025-02-18 14:21:08,287 : INFO : SauceDemoSelenium: 
+
+2025-02-18 14:21:08,287 : INFO : SauceDemoSelenium: Successfully found the Username textbox
+2025-02-18 14:21:08,408 : INFO : SauceDemoSelenium: Successfully found the Password textbox
+2025-02-18 14:21:08,448 : INFO : SauceDemoSelenium: Found the Login Button
+2025-02-18 14:21:18,591 : INFO : SauceDemoSelenium: Passwords Leaked Browser Alert Not Found. Continue...
+2025-02-18 14:21:18,679 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Backpack Found in the Shopping Inventory
+2025-02-18 14:21:23,743 : INFO : SauceDemoSelenium: Price of 'Sauce Labs Backpack' is 29.99 and has been added to the cart
+2025-02-18 14:21:23,801 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Backpack Found in the Shopping Inventory
+2025-02-18 14:21:28,938 : INFO : SauceDemoSelenium: Is this item present in the cart?:  Sauce Labs Backpack
+2025-02-18 14:21:28,965 : INFO : SauceDemoSelenium: Current Comparison Item in the cart?:  Sauce Labs Backpack
+2025-02-18 14:21:29,020 : INFO : SauceDemoSelenium: Found the Logout Options Burger-type Button
+2025-02-18 14:21:29,162 : INFO : SauceDemoSelenium: Resetting the app state before logging off...
+2025-02-18 14:21:29,227 : INFO : SauceDemoSelenium: Logged Out
+2025-02-18 14:21:29,227 : INFO : SauceDemoSelenium: Logging out from the application
+2025-02-18 14:21:29,317 : INFO : SauceDemoSelenium: 
+
+2025-02-18 14:21:29,317 : INFO : SauceDemoSelenium: Successfully found the Username textbox
+2025-02-18 14:21:29,427 : INFO : SauceDemoSelenium: Successfully found the Password textbox
+2025-02-18 14:21:29,467 : INFO : SauceDemoSelenium: Found the Login Button
+2025-02-18 14:21:39,605 : INFO : SauceDemoSelenium: Passwords Leaked Browser Alert Not Found. Continue...
+2025-02-18 14:21:39,682 : INFO : SauceDemoSelenium: Specified Test Item Sauce Labs Backpack Found in the Shopping Inventory
+2025-02-18 14:21:44,862 : INFO : SauceDemoSelenium: Price of 'Sauce Labs Backpack' is 29.99 and has been added to the cart
+2025-02-18 14:21:44,983 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Test.allTheThings() T-Shirt (Red) in the item cards yet. Continuing...
+2025-02-18 14:21:45,011 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Test.allTheThings() T-Shirt (Red) in the item cards yet. Continuing...
+2025-02-18 14:21:45,036 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Test.allTheThings() T-Shirt (Red) in the item cards yet. Continuing...
+2025-02-18 14:21:45,063 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Test.allTheThings() T-Shirt (Red) in the item cards yet. Continuing...
+2025-02-18 14:21:45,088 : INFO : SauceDemoSelenium: Not able to find the Specified Test Item Test.allTheThings() T-Shirt (Red) in the item cards yet. Continuing...
+2025-02-18 14:21:45,114 : INFO : SauceDemoSelenium: Specified Test Item Test.allTheThings() T-Shirt (Red) Found in the Shopping Inventory
+2025-02-18 14:21:50,270 : INFO : SauceDemoSelenium: Price of 'Test.allTheThings() T-Shirt (Red)' is 15.99 and has been added to the cart
+2025-02-18 14:21:50,420 : INFO : SauceDemoSelenium: Is this item present in the cart?:  Sauce Labs Backpack
+2025-02-18 14:21:50,445 : INFO : SauceDemoSelenium: Current Comparison Item in the cart?:  Sauce Labs Backpack
+2025-02-18 14:21:50,445 : INFO : SauceDemoSelenium: Is this item present in the cart?:  Test.allTheThings() T-Shirt (Red)
+2025-02-18 14:21:50,466 : INFO : SauceDemoSelenium: Current Comparison Item in the cart?:  Sauce Labs Backpack
+2025-02-18 14:21:50,483 : INFO : SauceDemoSelenium: Current Comparison Item in the cart?:  Test.allTheThings() T-Shirt (Red)
+2025-02-18 14:21:50,535 : INFO : SauceDemoSelenium: Found the Logout Options Burger-type Button
+2025-02-18 14:21:50,661 : INFO : SauceDemoSelenium: Resetting the app state before logging off...
+2025-02-18 14:21:50,723 : INFO : SauceDemoSelenium: Logged Out
+2025-02-18 14:21:50,723 : INFO : SauceDemoSelenium: Logging out from the application
+2025-02-18 14:21:50,812 : INFO : SauceDemoSelenium: 
+
+2025-02-18 14:21:50,812 : INFO : SauceDemoSelenium: Successfully found the Username textbox
+2025-02-18 14:21:50,930 : INFO : SauceDemoSelenium: Successfully found the Password textbox
+2025-02-18 14:21:50,971 : INFO : SauceDemoSelenium: Found the Login Button
+2025-02-18 14:22:01,121 : INFO : SauceDemoSelenium: Passwords Leaked Browser Alert Not Found. Continue...
+2025-02-18 14:22:01,208 : INFO : SauceDemoSelenium: Found the Logout Options Burger-type Button
+2025-02-18 14:22:01,338 : INFO : SauceDemoSelenium: Resetting the app state before logging off...
+2025-02-18 14:22:01,397 : INFO : SauceDemoSelenium: Logged Out
+2025-02-18 14:22:01,397 : INFO : SauceDemoSelenium: Logging out from the application
+2025-02-18 14:22:01,526 : INFO : SauceDemoSelenium: Closed the Browser session and hence this TEST session too!

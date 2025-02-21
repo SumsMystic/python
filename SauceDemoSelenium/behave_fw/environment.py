@@ -7,7 +7,6 @@ Author: Sumeet Agrawal
 import logging
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
-
 from behave_fw.Pages.login_page import LoginPage
 from behave_fw.Pages.product_display_page import ProductsDisplayPage
 from behave_fw.Pages.shopping_cart_page import ShoppingCartPage
@@ -18,8 +17,13 @@ def before_all(context):
     Setup that runs before the entire test suite
     """
     context.proj_logger = logging.getLogger('SauceDemoSelenium')
-    context.proj_logger.info("\n")
-    context.proj_logger.info("**************  START NEW RUN  **************")
+    context.proj_logger.level = logging.INFO
+    context.log_file_handler = logging.FileHandler("../logs/default_log_file.log")
+    context.log_formatter = logging.Formatter("%(asctime)s : %(levelname)s : %(name)s: %(message)s")
+    context.log_file_handler.setFormatter(context.log_formatter)
+    context.proj_logger.addHandler(context.log_file_handler)
+    context.proj_logger.info("\n **************  START NEW RUN  **************")
+
     context.driver = webdriver.Chrome()
     context.driver.get('https://www.saucedemo.com')
     context.driver.maximize_window()
@@ -44,4 +48,7 @@ def after_scenario(context, scenario):
     """
     context.login_page.is_website_burger_menu_on_top_left_corner()
     context.login_page.get_website_burger_menu_from_top_left_corner()
+    context.login_page.reset_website_state()
     context.login_page.logout()
+    context.proj_logger.info("Logging out from the application")
+    

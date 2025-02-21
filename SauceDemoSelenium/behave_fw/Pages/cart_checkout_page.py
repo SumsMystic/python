@@ -71,3 +71,22 @@ class CartCheckOutPage:
             self.driver.find_element(By.XPATH, '//button[@id="finish"]').click()
         except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
             self.proj_logger.error(f"Exception {E} occurred while trying to click on Finish from Checkout Overview Page")
+
+    def validate_checkout_complete(self):
+        try:
+            checkout_page_website_title_txt = self.driver.find_element(By.CLASS_NAME, "title").text
+            if ("Complete!" in checkout_page_website_title_txt): 
+                return True
+            else:
+                return False
+        except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
+            self.proj_logger.error(f"Exception {E} occurred while trying to click on Finish from Checkout Overview Page")
+            return False
+        
+    def click_back_home_button(self):
+        try:
+            self.driver.find_element(By.XPATH, '//button[@id="back-to-products"]').click()
+        except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
+            self.proj_logger.error(f"Exception {E} occurred while trying to click on Back Home from Checkout Complete Page")
+
+            

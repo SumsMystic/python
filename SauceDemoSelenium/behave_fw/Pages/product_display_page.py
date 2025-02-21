@@ -74,7 +74,52 @@ class ProductsDisplayPage:
                     self.proj_logger.info(f"Not able to find the Specified Test Item {shopping_item_name} in the item cards yet. Continuing...")
         except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
             self.proj_logger.info(f"Perhaps not present on the products page. Exception {E} occurred.")
+
+    def go_to_item_details_page_and_get_its_price(self, shopping_item_name):
+        try:
+            # First check if at least 1 inventory item is present and then proceed.
+            self.driver.find_element(By.CLASS_NAME, 'inventory_item')
         
+            all_shopping_items_objs_lst = self.driver.find_elements(By.CLASS_NAME, 'inventory_item')
+            for each_shopping_item in all_shopping_items_objs_lst:
+                self.proj_logger.debug(f"Current Shopping Test Item {each_shopping_item.text}")
+                
+                shopping_item_nameobj = each_shopping_item.find_element(By.CLASS_NAME, 'inventory_item_name')
+                if shopping_item_name in shopping_item_nameobj.text:
+                    self.proj_logger.info(f"Specified Test Item {shopping_item_name} Found in the Shopping Inventory")
+                    shopping_item_price = float((each_shopping_item.find_element(By.CLASS_NAME, 'inventory_item_price').text)[1:])
+
+                    # Click on the item to go to its details page
+                    shopping_item_nameobj.click()
+                    sleep(5)
+                    return shopping_item_price
+                else:
+                    self.proj_logger.info(f"Not able to find the Specified Test Item {shopping_item_name} in the item cards yet. Continuing...")
+        except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
+            self.proj_logger.info(f"Perhaps not present on the products page. Exception {E} occurred.")
+        
+    def is_currently_on_item_details_page(self):
+        try:
+            self.driver.find_element(By.CLASS_NAME, 'inventory_details_desc_container')
+            return True
+        except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
+            self.proj_logger.info(f"Failed to find the item details page. Exception {E} occurred.")
+            return False
+        
+    def add_item_to_cart_from_details_page_and_get_its_price(self):
+        try:
+            item_details_price = float(self.driver.find_element(By.CLASS_NAME, 'inventory_details_price').text[1:])
+            self.driver.find_element(By.ID, 'add-to-cart').click()
+            return item_details_price
+        except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
+            self.proj_logger.info(f"Failed to find the item details page. Exception {E} occurred.")
+            return 0
+        
+    def click_back_to_products_from_menu(self):
+        try:
+            self.driver.find_element(By.ID, 'back-to-products').click()
+        except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
+            self.proj_logger.info(f"Failed to click on Back to Products. Exception {E} occurred.")
     
     def does_shopped_inventory_item_now_have_remove_button(self, shopping_item_name):
         try:
@@ -90,6 +135,14 @@ class ProductsDisplayPage:
                     return True
                 else:
                     self.proj_logger.info(f"Not able to find the Specified Test Item {shopping_item_name} in the item cards yet. Continuing...")
+        except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
+            self.proj_logger.info(f"Perhaps Specified product {shopping_item_name} hasn't yet been added to the cart. Exception {E} occurred.")
+            return False
+        
+    def does_shopped_item_now_have_remove_button_on_product_details_page(self, shopping_item_name):
+        try:
+            self.driver.find_element(By.ID, 'remove')
+            return True
         except (TimeoutException, NoSuchElementException, ElementNotVisibleException) as E:
             self.proj_logger.info(f"Perhaps Specified product {shopping_item_name} hasn't yet been added to the cart. Exception {E} occurred.")
             return False

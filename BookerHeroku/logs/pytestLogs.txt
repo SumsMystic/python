@@ -388,3 +388,12 @@
 2025-02-11 11:20:37 INFO  ---- Executing  test_delete_newly_added_book ---- 
 2025-02-11 11:20:37 INFO cooks: {'token': '8e2e793461165b8'}
 2025-02-11 11:20:37 INFO final URL: https://restful-booker.herokuapp.com/booking/5120
+2025-02-17 17:40:47 INFO 
+
+2025-02-17 17:40:48 INFO **************  START NEW RUN  **************
+2025-02-17 17:40:48 INFO  ---- Executing  test_get_auth_token ---- 
+2025-02-17 17:40:53 INFO  ---- Executing  test_get_all_bookings ---- 
+2025-02-17 17:40:54 INFO  ---- Executing  test_add_book_to_library ---- 
+2025-02-17 17:40:55 INFO  ---- Executing  test_delete_newly_added_book ---- 
+2025-02-17 17:40:55 INFO cooks: {'token': 'ca9353bedda458f'}
+2025-02-17 17:40:55 INFO final URL: https://restful-booker.herokuapp.com/booking/32

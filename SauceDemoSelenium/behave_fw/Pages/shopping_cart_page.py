@@ -60,8 +60,8 @@ class ShoppingCartPage:
                 if item_to_be_removed in shopping_cart_item_name_txt:
                     item_price = (each_shopping_cart_item_card.find_element(By.CLASS_NAME, 'inventory_item_price').text)[1:]
                     item_price = float(item_price)
-                    each_shopping_cart_item_card.find_element(By.XPATH, '//button[contains(text(), "Remove")]').click()
-                    self.proj_logger.debug(f"Removed {item_to_be_removed} from the cart")
+                    each_shopping_cart_item_card.find_element(By.XPATH, './/button[contains(text(), "Remove")]').click()
+                    self.proj_logger.info(f"Removed {item_to_be_removed} from the cart")
                     return item_price
         return None
 
@@ -82,10 +82,12 @@ class ShoppingCartPage:
         all_shopping_cart_items_lst = self._find_shopping_cart_items()
         for each_shopping_cart_item_card in all_shopping_cart_items_lst: 
             shopping_cart_item_name_txt = each_shopping_cart_item_card.find_element(By.CLASS_NAME, 'inventory_item_name').text
+            self.proj_logger.info(f"Current Comparison Item in the cart?:  {shopping_cart_item_name_txt}")
             if str(item_name) in shopping_cart_item_name_txt:
                 return True
             else:
-                return False
+                continue
+        return False
             
     def click_on_continue_shopping_button(self):
         try:

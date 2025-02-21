@@ -36,8 +36,13 @@ class LoginPage:
     
     def is_locked_out_user_error_seen(self):
         try:
-            self.driver.find_element(By.XPATH, '//div/h3[@data-test="error"]')
-            return True
+            error_msg = self.driver.find_element(By.CLASS_NAME, 'error-message-container error').text
+            if 'Sorry, this user has been locked out' in error_msg:
+                self.proj_logger.info("Locked Out User error is seen")
+                return True
+            else:
+                self.proj_logger.info("Error Message found but incorrect message displayed as: " + error_msg)
+                return False
         except NoSuchElementException as E:
             self.proj_logger.info(f"Locked Out User error not found. Exception: {E}")
             return False
@@ -46,6 +51,10 @@ class LoginPage:
         logout_options_btn = self.driver.find_element(By.ID, 'react-burger-menu-btn')
         logout_options_btn.click()
         self.proj_logger.info("Found the Logout Options Burger-type Button")
+
+    def reset_website_state(self):
+        self.driver.find_element(By.ID, 'reset_sidebar_link').click()
+        self.proj_logger.info("Resetting the app state before logging off...")
         
     def is_website_burger_menu_on_top_left_corner(self):
         try:
@@ -59,3 +68,6 @@ class LoginPage:
         logout_link = self.driver.find_element(By.PARTIAL_LINK_TEXT, 'Logout')
         logout_link.click()
         self.proj_logger.info("Logged Out")
+
+    def verify_locked_out_user_error(self):
+        assert self.is_locked_out_user_error_seen() == True
