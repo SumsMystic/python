@@ -1,7 +1,7 @@
 Feature: As a problem user, I want to verify broken functionality in the application
 
-@problemuser @shoppingitemimagechecks @productremovechecks
-Scenario: End To End test for standard user
+@problemuser @productremovechecks
+Scenario: Verify remove product functionality of the application
     Given I login as problem user
     When I add the following items to the cart
         | item_name                 |
@@ -10,35 +10,22 @@ Scenario: End To End test for standard user
     And I remove the following items from the cart
         | item_name                 |
         | Sauce Labs Fleece Jacket  |
-    And I add the following items to the cart
-        | item_name                 |
-        | Sauce Labs Onesie         |
-    Then the cart should contain the following items
+    Then the remove button will not change status to add
+    And the cart should show the following items
         | item_name                 |
         | Sauce Labs Backpack       |
-        | Sauce Labs Onesie         |
-    And the cart should show the bill of the items
-    And I should be able to checkout using following details
-        | first_name | last_name | postal_code |
-        | John       | Doe       | 12345       |
-    And the cart should be empty after checkout
+        | Sauce Labs Fleece Jacket  |
 
-@total
-Scenario: Add items to cart and view the bill and checkout
-    Given I login as standard user
-    When I add the following items to the cart
+@problemuser @shoppingitemimagechecks
+Scenario: Verify image of the product in the cart
+    Given I login as problem user
+    When I check the image of the following items
+    alt="Sauce Labs Bolt T-Shirt" class="inventory_item_img"
         | item_name                 |
         | Sauce Labs Backpack       |
         | Sauce Labs Fleece Jacket  |
-    Then the cart should contain the following items
-        | item_name                 |
-        | Sauce Labs Backpack       |
-        | Sauce Labs Fleece Jacket  |
-    And the cart should show the bill of the items
-    And I should be able to checkout using following details
-        | first_name | last_name | postal_code |
-        | John       | Doe       | 12345       |
-    And the cart should be empty after checkout
+    Then the images of the items should be displayed incorrectly
+
 
 @smoke
 Scenario: Add items to cart

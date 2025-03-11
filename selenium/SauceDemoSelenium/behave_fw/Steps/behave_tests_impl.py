@@ -16,11 +16,6 @@ def step_impl(context):
     context.login_page.get_login_button().click()
 
 
-@then('I should see the appropriate error message')
-def step_impl(context):
-    context.login_page.verify_locked_out_user_error()
-
-
 @when('I remove the following items from the cart')
 def step_impl(context):
     assert context.shopping_cart_page.is_shopping_cart_empty() == False
@@ -69,6 +64,23 @@ def step_impl(context):
     context.products_page.click_on_shopping_cart_to_view_cart_contents()
     shopping_cart_items = context.shopping_cart_page.get_number_of_shopping_cart_items()
     assert shopping_items_number_from_icon == shopping_cart_items
+
+@when('I check the image of the following items')
+def step_impl(context):
+    for row in context.table:
+        itm_name = row['item_name']
+        assert (context.products_page.is_item_image_present(itm_name)) == True
+
+@then('I should see the appropriate error message')
+def step_impl(context):
+    context.login_page.verify_locked_out_user_error()
+
+@then('the remove button will not change status to add')
+def step_impl(context):
+    for row in context.table:
+        itm_name = row['item_name']
+        assert context.products_page.does_shopped_inventory_item_now_have_remove_button(itm_name)
+
 
 @then('the cart should contain the following items')
 def step_impl(context):
